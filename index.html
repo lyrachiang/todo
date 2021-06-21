@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&amp;family=Noto+Sans+TC&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+  </head>
+  <body>
+    <section class="main_section">
+      <div class="custom_container">
+        <h1 class="title">TODO LIST</h1>
+        <div class="input_box">
+          <input class="todo_input" type="text" placeholder="新增待辦事項">
+          <button class="btn_add" href="#">+</button>
+        </div>
+        <div class="todo_box">
+          <ul class="todo_tabs">
+            <li><a class="active" href="#" data-tab="0">全部</a></li>
+            <li><a href="#" data-tab="1">待完成</a></li>
+            <li><a href="#" data-tab="2">已完成</a></li>
+          </ul>
+          <ul class="todo_list"></ul>
+          <div class="info_box">
+            <div><span class="pending_cnt">0</span><span>個待完成項目</span></div><a class="btn_clear" href="#">清除已完成項目</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

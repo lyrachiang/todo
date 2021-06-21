@@ -1,0 +1,26 @@
+@import "./reset";
+@import "./variable";
+@import "./mixin";
+
+body {
+  font-family: $font-family;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  transition: all .3s;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+@import "./pages/index";
